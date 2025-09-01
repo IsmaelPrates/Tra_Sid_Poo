@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Cadastro de Tarefas</title>
+</head>
+<body>
+
+  <h3>Cadastro de Tarefas</h3>
+  
+  <form action="cadastrar.php" method="post">
+    <fieldset>
+      Tarefa: <input type="text" name="tarefa" required />
+      <br><br>
+
+      Prioridade:
+      <select name="prioridade" required>
+        <option value="alta">Alta</option>
+        <option value="media">Média</option>
+        <option value="baixa">Baixa</option>
+      </select>
+      <br><br>
+
+      Prazo de finalização:
+      <input type="date" name="prazo" required />
+      <br><br>
+    </fieldset>
+    <br>
+    <button type="submit">Salvar</button>
+  </form>
+
+  <br>
+  <button onclick="window.location.href='listar.php'">Ver Tarefas</button>
+
+</body>
+</html>
